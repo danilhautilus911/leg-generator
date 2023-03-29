@@ -1,0 +1,260 @@
+#prototype_42 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffceb;
+
+  .Container {
+    position: relative;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    background: #ffd500;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    align-items: center;
+    border-radius: 16px;
+    padding-top: 16px;
+
+    h1 {
+      font-family: 'Suisse Intl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: -0.04em;
+      color: #fffceb;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: 'Suisse Intl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 144px;
+      line-height: 128px;
+      text-align: center;
+      letter-spacing: -0.04em;
+      color: #fffceb;
+      margin: 0;
+    }
+
+    h3 {
+      font-family: 'Suisse Intl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -0.04em;
+      color: #fffceb;
+      margin: 0;
+    }
+
+    h4 {
+      font-family: 'Suisse Intl';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      color: #b8b4a2;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .PickerSet {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+
+      .SizePicker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        .SizePickerOptions {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 8px;
+          gap: 8px;
+
+          // width: 232px;
+          // height: 144px;
+
+          background: #fffceb;
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+          border-radius: 12px;
+
+          .SizePickerOption1,
+          .SizePickerOption2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+
+            // width: 104px;
+            // height: 128px;
+
+            background: #fffceb;
+            border: 1px solid #e0dcc5;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .Option1PlateSize,
+            .Option2PlateSize {
+              width: 88px;
+              height: 88px;
+            }
+
+            .Option2PlateSize {
+              border: 2px solid #b8b4a2;
+              border-radius: 8px;
+            }
+
+            .Option1PlateSize {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              padding: 22px;
+
+              .Option1Plate {
+                width: 44px;
+                height: 44px;
+                border: 2px solid #b8b4a2;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .ColorPicker {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        .ColorPickerOptions {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 8px;
+          gap: 8px;
+          background: #fffceb;
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+          border-radius: 12px;
+          cursor: pointer;
+
+          .ColorPickerOption1,
+          .ColorPickerOption2,
+          .ColorPickerOption3,
+          .ColorPickerOption4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+            background: #fffceb;
+            border: 1px solid #e0dcc5;
+            border-radius: 8px;
+          }
+
+          .Option1PlateColor,
+          .Option2PlateColor,
+          .Option3PlateColor,
+          .Option4PlateColor {
+            width: 88px;
+            height: 88px;
+            border-radius: 100px;
+          }
+
+          .Option1PlateColor {
+            background: #fffceb;
+            border: 2px solid #b8b4a2;
+          }
+
+          .Option2PlateColor {
+            background: #7fc45f;
+          }
+
+          .Option3PlateColor {
+            background: #6495f3;
+          }
+
+          .Option4PlateColor {
+            background: #b8b4a2;
+          }
+        }
+      }
+    }
+
+    .BottomRows {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 48px;
+
+      .rowWithLink {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        .link {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 20px 40px;
+          background: #fffceb;
+          border-radius: 100px;
+          cursor: pointer;
+
+          h1 {
+            color: #e0dcc5;
+            font-size: 32px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    a .SC_Button {
+      font-family: 'Suisse Intl';
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      color: #fffceb;
+      font-size: 32px;
+      line-height: 32px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+    // .nextPage {
+    //   display: flex;
+    //   flex-direction: row;
+    //   align-items: flex-start;
+    //   cursor: pointer;
+    //   color: #e0dcc5;
+    //   font-size: 32px;
+    //   line-height: 32px;
+    // }
+  }
+}

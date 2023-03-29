@@ -1,0 +1,364 @@
+body.prototype_body_41 {
+  .Container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffd500;
+    padding: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 8px;
+
+    .Left {
+      position: relative;
+      width: 100%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      align-items: start;
+
+      background: #fffceb;
+      border-radius: 16px;
+
+      h2 {
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+        margin: 0;
+
+        color: #b8b4a2;
+      }
+
+      .header {
+        position: relative;
+        width: 100%;
+        height: 64px;
+        margin: 0;
+        color: #b8b4a2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        column-gap: 16px;
+
+        h1 {
+          font-family: Suisse Intl;
+          font-weight: 500;
+          text-transform: lowercase;
+          text-align: center;
+          font-size: 64px;
+          line-height: 64px;
+          letter-spacing: -0.04em;
+          display: inline;
+          margin: 0;
+        }
+
+        h3 {
+          font-family: 'Suisse Intl';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 32px;
+          letter-spacing: -0.04em;
+          margin: 0;
+        }
+
+        .addButton {
+          position: relative;
+          background: #ffd500;
+          border-radius: 100px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          width: 64px;
+          height: 64px;
+
+          h3 {
+            padding: 0px 0px 4px 0px;
+            color: #fffef5;
+          }
+        }
+      }
+
+      .detailCreation {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: end;
+        column-gap: 16px;
+
+        .detailProportions,
+        .detailAmount,
+        .colorPalette {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          row-gap: 16px;
+          align-items: start;
+
+          ::placeholder {
+            color: #e0dcc5;
+          }
+
+          input {
+            height: 40px;
+            border: none;
+            color: #e0dcc5;
+
+            background: #ffffff;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+            border-radius: 8px;
+
+            font-family: 'Suisse Intl';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: -0.04em;
+            padding: 8px;
+
+            cursor: pointer;
+          }
+
+          input:focus {
+            outline: none;
+            color: #b8b4a2;
+          }
+        }
+      }
+
+      .colorPaletteSet {
+        position: relative;
+        background: #ffffff;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        padding: 8px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        column-gap: 8px;
+
+        #colorCircle {
+          position: relative;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          cursor: pointer;
+        }
+
+        .whiteDetail {
+          background: #ffffff;
+          border: 2px solid #e0dcc5;
+        }
+
+        .greenDetail {
+          background: #86c16a;
+          border: 2px solid #71a35a;
+        }
+
+        .blueDetail {
+          background: #6a98f0;
+          border: 2px solid #5a81cc;
+        }
+
+        .greyDetail {
+          background: #b8b4a2;
+          border: 2px solid #a3a090;
+        }
+      }
+
+      .detailProportions .inputSet {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 4px;
+      }
+      .detailProportions input {
+        width: 64px;
+      }
+
+      .detailAmount input {
+        width: 104px;
+      }
+
+      .removeButton {
+        width: 40px;
+        height: 40px;
+        background: #ffffff;
+        border-radius: 100px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+      }
+
+      .SC_Button {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.04em;
+
+        color: #fffef5;
+        background-color: #e0dcc5;
+        padding: 16px 24px;
+        border-radius: 100px;
+      }
+    }
+    .Right {
+      position: relative;
+      width: 100%;
+      background: #fff9d6;
+      border-radius: 16px;
+      overflow: hidden;
+      padding: 24px;
+
+      .Sketch {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin: auto;
+      }
+
+      .buttonSet {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        column-gap: 8px;
+
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.04em;
+        z-index: 1;
+
+        .SC_Button {
+          color: #e0dcc5;
+          background: rgba(255, 254, 245, 0.5);
+          backdrop-filter: blur(2px);
+          padding: 16px 24px;
+          border-radius: 100px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .canvas {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    // background: #ffffff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    margin: auto;
+
+    .canvasElement {
+      position: relative;
+      padding: 4px;
+    }
+
+    .canvasCircle {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      // border: 1px solid #e0dcc5;
+    }
+  }
+
+  .detail {
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+    // transform-origin: 0 0;
+    // transform: rotate(90deg);
+  }
+
+  .rotate {
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+
+  .notRotate {
+    transform-origin: 100% 0;
+    transform: rotate(0deg);
+  }
+
+  .element {
+    position: relative;
+    // background: #6a98f0;
+    padding: 4px;
+  }
+
+  .backgroundWhite {
+    background: #ffffff;
+  }
+
+  .backgroundGreen {
+    background: #86c16a;
+  }
+
+  .backgroundBlue {
+    background: #6a98f0;
+  }
+
+  .backgroundGrey {
+    background: #b8b4a2;
+  }
+
+  .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    // border: 1px solid #5a81cc;
+  }
+
+  .borderWhite {
+    border: 1px solid #e0dcc5;
+  }
+
+  .borderGreen {
+    border: 1px solid #71a35a;
+  }
+
+  .borderBlue {
+    border: 1px solid #5a81cc;
+  }
+
+  .borderGrey {
+    border: 1px solid #a3a090;
+  }
+}
+
+#prototype_41 {
+  position: relative;
+  // display: flex;
+  width: 100%;
+  // background: #ffd500;
+}
