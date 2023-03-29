@@ -13,7 +13,7 @@ body.prototype_body_41 {
 
     .Left {
       position: relative;
-      width: 100%;
+      width: 536px;
       padding: 16px;
       display: flex;
       flex-direction: column;
@@ -38,7 +38,7 @@ body.prototype_body_41 {
 
       .header {
         position: relative;
-        width: 100%;
+        width: 500px;
         height: 64px;
         margin: 0;
         color: #b8b4a2;
@@ -80,6 +80,7 @@ body.prototype_body_41 {
           align-items: center;
           width: 64px;
           height: 64px;
+          cursor: pointer;
 
           h3 {
             padding: 0px 0px 4px 0px;
@@ -95,7 +96,7 @@ body.prototype_body_41 {
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: end;
-        column-gap: 16px;
+        column-gap: 24px;
 
         .detailProportions,
         .detailAmount,
@@ -199,6 +200,10 @@ body.prototype_body_41 {
         background: #ffffff;
         border-radius: 100px;
         box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .SC_Button {
@@ -214,8 +219,10 @@ body.prototype_body_41 {
 
         color: #fffef5;
         background-color: #e0dcc5;
-        padding: 16px 24px;
+        padding: 13px 24px 19px 24px;
         border-radius: 100px;
+
+        cursor: pointer;
       }
     }
     .Right {
@@ -225,6 +232,16 @@ body.prototype_body_41 {
       border-radius: 16px;
       overflow: hidden;
       padding: 24px;
+
+      h3 {
+        font-family: 'Suisse Intl';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.04em;
+        margin: 0;
+      }
 
       .Sketch {
         position: relative;
@@ -253,6 +270,20 @@ body.prototype_body_41 {
         line-height: 32px;
         letter-spacing: -0.04em;
         z-index: 1;
+
+        .rebuild,
+        .download {
+          color: #e0dcc5;
+          background: rgba(255, 254, 245, 0.5);
+          backdrop-filter: blur(2px);
+          padding: 16px 24px;
+          border-radius: 100px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 8px;
+        }
 
         .SC_Button {
           color: #e0dcc5;

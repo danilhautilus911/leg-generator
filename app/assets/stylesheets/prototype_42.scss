@@ -189,14 +189,17 @@
 
           .Option2PlateColor {
             background: #7fc45f;
+            border: 2px solid #71a35a;
           }
 
           .Option3PlateColor {
             background: #6495f3;
+            border: 2px solid #5a81cc;
           }
 
           .Option4PlateColor {
             background: #b8b4a2;
+            border: 2px solid #a3a090;
           }
         }
       }
@@ -223,6 +226,7 @@
           background: #fffceb;
           border-radius: 100px;
           cursor: pointer;
+          column-gap: 8px;
 
           h1 {
             color: #e0dcc5;
